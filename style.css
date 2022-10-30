@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: rgb(63, 63, 97);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.altura, .peso, .calcular{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(113, 58, 202);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(80, 38, 156);
+    transition: all 0.2s ease-in;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 500px){
+    body, input, button{
+        font-size: 15px;
+    }
+}
+
